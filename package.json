@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "I have lived in Seattle, WA since 2010 and grew up in Washington. __*The Name of the Wind*__ by Patrick Rothfuss is my favorite book, I enjoy knitting and **cross country skiing**. This class is completely out of my comfort zone, I think it's a useful skill to have so I am challenging myself.",
   "main": "index.js",
-  "scripts": {"start": "./node_modules/.bin/browser-sync  start --server --files='**/*'",
+  "scripts": {
+    "start": "./node_modules/.bin/browser-sync  start --server --files='**/*'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
