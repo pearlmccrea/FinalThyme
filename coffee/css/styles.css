@@ -1,0 +1,55 @@
+header {
+    background-image: url(../images/paul-gilmore-145802-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* selects all h1, h2 elements  */
+h1, h2 {
+    font-weight: 300;
+    font-family:'Raleway', sans-serif;
+}
+h1 {
+    font-size: 5.0rem;
+}
+    h2 {
+        font-size: 2.5rem;
+    }
+
+/* font-family is inhered, so setting it on body sets it for the whole page */
+body {
+    font-family:'Nunito Sans', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+div#menu > div > h2 {
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+main {
+    background-color: white;
+    margin: 0px;
+    line-height: 1.5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+main h2 {
+    margin: 0px
+}
+
+main img {
+
+}
