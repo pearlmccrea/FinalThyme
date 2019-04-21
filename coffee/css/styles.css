@@ -6,8 +6,8 @@ header {
     color: white
 }
 
-/* formats motto paragraph */
-p {
+/* selects p class="motto" motto paragraph and formats it */
+.motto {
     font-style: italic;
     color: white
 }
@@ -40,11 +40,17 @@ body {
     font-weight: bold;
 }
 
+/* left-aligns menu item descriptions */
+dd {
+    padding: 0em;
+    margin: 0px;
+    margin-left: auto;
+}
 
-
-
-
-
+dt {
+    font-weight: bold;
+    font-size: 1.5rem
+}
 
 
 
