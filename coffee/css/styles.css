@@ -1,7 +1,15 @@
+/* formats header with image and font color  */
 header {
     background-image: url(../images/paul-gilmore-145802-unsplash.jpg);
     background-size: cover;
     background-position: center;
+    color: white
+}
+
+/* formats motto paragraph */
+p {
+    font-style: italic;
+    color: white
 }
 
 /* selects all h1, h2 elements  */
@@ -9,6 +17,7 @@ h1, h2 {
     font-weight: 300;
     font-family:'Raleway', sans-serif;
 }
+
 h1 {
     font-size: 5.0rem;
 }
@@ -16,13 +25,20 @@ h1 {
         font-size: 2.5rem;
     }
 
+/* selects all div class="container" elements  */
+.container {
+        max-width: 1170px;
+}
+
 /* font-family is inhered, so setting it on body sets it for the whole page */
 body {
     font-family:'Nunito Sans', sans-serif;
 }
 
-
-
+#menu {
+    background-color: #F0F0F0;
+    font-weight: bold;
+}
 
 
 
@@ -39,7 +55,7 @@ margin-bottom: 0px;
 }
 
 main {
-    background-color: white;
+    background-color: #F0F0F0;
     margin: 0px;
     line-height: 1.5;
     padding-top: 10px;
