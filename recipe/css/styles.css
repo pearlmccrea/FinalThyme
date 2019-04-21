@@ -1,7 +1,0 @@
-p {
-    color: aqua;
-}
-/* selects only the p elements contained within header elements */
-header p {
-    ...
-}
