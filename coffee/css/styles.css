@@ -4,8 +4,8 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-top: 1rem;
-    padding-bottom: 5rem;
+    padding-top: .1rem;
+    padding-bottom: 1rem;
     color: white 
 }
 
@@ -34,8 +34,9 @@ h1 {
 .container {
         max-width: 1170px;
         margin-left: auto;
-        padding-right: 16em;
-        padding-left: 16em;
+        margin-right: auto;
+        padding-right: 1rem;
+        padding-left: 1rem;
 }
 
 /* font-family is inhered, so setting it on body sets it for the whole page */
@@ -60,15 +61,16 @@ dd {
     margin-left: auto;
 }
 
-dd + dt {
-    line-height: 3;
-}
-
-dt {
+nav dt {
     font-weight: bold;
-    font-size: 1.5rem
+    font-size: 1.5rem;
 }
 
+
+nav dd{
+    margin-left: auto;
+    margin-bottom:1rem;
+}
 
 div#menu > div > h2 {
 margin-top: 0px;
@@ -93,22 +95,33 @@ main img {
   width: 300px;
 }
 
-main p{
+main {
     line-height: 1.5;
     background-color: #E0E0E0;
     margin-left: auto;
     display: block;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    hyphens: auto;
+ 
 }
 
 footer{
     background-color: #3E1305;
     color: white;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    margin-top: -1rem;
 }
 
-svg{
+footer svg{
     fill: white;
     width: 1.8em;
+    padding-right: 1rem;
+    transition: fill .3s;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer svg:hover{
+    fill: #d0d0d0;
 }
