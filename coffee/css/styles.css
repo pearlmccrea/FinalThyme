@@ -34,7 +34,6 @@ h1 {
 .container {
         max-width: 1170px;
         margin-left: auto;
-        display: center;
         padding-right: 16em;
         padding-left: 16em;
 }
@@ -46,7 +45,6 @@ body {
 
 /* formats background color and padding */
 body {
-    padding-left: auto;
     background-color: #F0F0F0
 }
 
@@ -102,11 +100,6 @@ main p{
     display: block;
     overflow-wrap: break-word;
     word-wrap: break-word;
-    -ms-word-break: break-all;
-    word-break: break-word;
-    -ms-hyphens: auto;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
     hyphens: auto;
 }
 
@@ -114,9 +107,8 @@ footer{
     background-color: #3E1305;
     color: white;
 }
+
 svg{
     fill: white;
-    size: 180%;
-    width: 25px;
-    height: 25px;
+    width: 1.8em;
 }
