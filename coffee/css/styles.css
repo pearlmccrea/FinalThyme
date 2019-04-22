@@ -3,12 +3,16 @@ header {
     background-image: url(../images/paul-gilmore-145802-unsplash.jpg);
     background-size: cover;
     background-position: center;
-    color: white
+    background-repeat: no-repeat;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    color: white 
 }
 
 /* selects p class="motto" motto paragraph and formats it */
 .motto {
     font-style: italic;
+    margin-top: 0px;
     color: white
 }
 
@@ -16,6 +20,7 @@ header {
 h1, h2 {
     font-weight: 300;
     font-family:'Raleway', sans-serif;
+    margin: 0px;
 }
 
 h1 {
@@ -28,11 +33,21 @@ h1 {
 /* selects all div class="container" elements  */
 .container {
         max-width: 1170px;
+        margin-left: auto;
+        display: center;
+        padding-right: 16em;
+        padding-left: 16em;
 }
 
 /* font-family is inhered, so setting it on body sets it for the whole page */
 body {
     font-family:'Nunito Sans', sans-serif;
+}
+
+/* formats background color and padding */
+body {
+    padding-left: auto;
+    background-color: #F0F0F0
 }
 
 #menu {
@@ -47,12 +62,14 @@ dd {
     margin-left: auto;
 }
 
+dd + dt {
+    line-height: 3;
+}
+
 dt {
     font-weight: bold;
     font-size: 1.5rem
 }
-
-
 
 
 div#menu > div > h2 {
@@ -72,6 +89,34 @@ main h2 {
     margin: 0px
 }
 
+/* moves image of mug and saucer to right hand side */
 main img {
+  float: right;
+  width: 300px;
+}
 
+main p{
+    line-height: 1.5;
+    background-color: #E0E0E0;
+    margin-left: auto;
+    display: block;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+footer{
+    background-color: #3E1305;
+    color: white;
+}
+svg{
+    fill: white;
+    size: 180%;
+    width: 25px;
+    height: 25px;
 }
