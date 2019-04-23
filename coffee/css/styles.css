@@ -4,16 +4,17 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-top: .1rem;
-    padding-bottom: 1rem;
-    color: white 
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    color: white;
 }
 
 /* selects p class="motto" motto paragraph and formats it */
 .motto {
     font-style: italic;
+    font-size: 1.5rem;
     margin-top: 0px;
-    color: white
+    color: white;
 }
 
 /* selects all h1, h2 elements  */
@@ -42,10 +43,11 @@ h1 {
 /* font-family is inhered, so setting it on body sets it for the whole page */
 body {
     font-family:'Nunito Sans', sans-serif;
+    font-size: 16px;
     background-color: #F0F0F0
 }
 
-
+/* formats menu section of page */
 #menu {
     background-color: #F0F0F0;
     font-weight: bolder;
@@ -54,19 +56,12 @@ body {
 }
 
 /* left-aligns menu item descriptions */
-dd {
-    padding: 0em;
-    margin: 0px;
-    margin-left: auto;
-}
-
-nav dt {
+dt {
     font-weight: bolder;
     font-size: 1.5rem;
 }
 
-
-nav dd{
+dd {
     margin-left: auto;
     margin-bottom:1rem;
 }
@@ -76,12 +71,15 @@ div#menu > div > h2 {
     margin-bottom: 0px;
     }
 
+/* formats about us section, background color and text formatting */
 main {
-    background-color: #F0F0F0;
     margin: 0px;
     line-height: 1.5;
     padding-top: 10px;
     padding-bottom: 25px;
+    background-color: #E0E0E0;
+    margin-left: auto;
+    display: block;
 }
 
 main h2 {
@@ -94,14 +92,7 @@ main img {
   width: 300px;
 }
 
-main {
-    line-height: 1.5;
-    background-color: #E0E0E0;
-    margin-left: auto;
-    display: block;
- 
-}
-
+/* defines footer size and color */
 footer{
     background-color: #3E1305;
     color: white;
@@ -113,11 +104,12 @@ footer{
 /* changes url icon color, size and spacing */
 footer svg{
     fill: white;
-    width: 1.8em;
+    width: 1.8rem;
     padding-right: 1rem;
     transition: fill .3s;
 }
 
+/* removes underlining from url area */
 a{
     text-decoration: none;
 }
