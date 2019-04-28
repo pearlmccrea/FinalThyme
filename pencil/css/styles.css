@@ -1,4 +1,63 @@
 html {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 16px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 16px;
+}
+
+/* flexbox */
+* {
+  box-sizing: border-box; /* include padding and border is size calcs */
+}
+/* selects all div class="container" elements  */
+.container {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  justify-content: right;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* formats header with image and font color  */
+header {
+  background-position: center;
+  background: linear-gradient(#3e1305, #8a2811);
+  padding-top: 1px;
+  padding-bottom: 0px;
+  color: white;
+}
+
+/* rules that apply only to screens 768 pixels and wider */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  header {
+    background-image: url(../images/angelina-litvin-32188-unsplash.jpg); /* use background image on larger screens */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom right;
+    padding-top: 100px;
+    color: black;
+    font-size: 5rem; /* increase font size to 18 pixels on larger screens */
+  }
+  p {
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+}
+
+/* rules that apply only to screens 992 pixels and wider */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  header {
+    background-image: url(../images/angelina-litvin-32188-unsplash.jpg); /* use background image on larger screens */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom right;
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
 }
