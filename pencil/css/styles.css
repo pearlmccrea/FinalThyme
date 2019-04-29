@@ -18,13 +18,35 @@ html {
   margin-right: auto;
 }
 
+/* removes bulleting from list */
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
 /* formats header with image and font color  */
 header {
   background-position: center;
   background: linear-gradient(#3e1305, #8a2811);
-  padding-top: 1px;
-  padding-bottom: 0px;
+  background-size: cover;
+  background-origin: border-box;
+  background-position: auto;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
   color: white;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+.tagline {
+  font-weight: 300;
+  max-width: 50%; /* will always compare to parent element */
 }
 
 /* rules that apply only to screens 768 pixels and wider */
@@ -37,13 +59,23 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: bottom right;
+    background-size: cover;
     padding-top: 100px;
     color: black;
     font-size: 5rem; /* increase font size to 18 pixels on larger screens */
   }
-  p {
+  .tagline {
     font-weight: 300;
     font-size: 1.5rem;
+    max-width: 50%;
+  }
+  .features-icon {
+    display: flex;
+    flex-grow: auto;
+    flex-basis: 33px;
+  }
+  li {
+    flex-basis: 50%;
   }
 }
 
@@ -60,4 +92,83 @@ header {
     padding-top: 150px;
     padding-bottom: 50px;
   }
+  .feature {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .tagline {
+    font-weight: 300;
+    font-size: 1.5rem;
+    max-width: 50%;
+  }
+  li {
+    flex-basis: 30%;
+  }
+}
+
+/* rules that apply only to screens 1200 pixels and wider */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+  header {
+    background-image: url(../images/angelina-litvin-32188-unsplash.jpg); /* use background image on larger screens */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom right;
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+  .feature {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tagline {
+    font-weight: 300;
+    font-size: 1.5rem;
+    max-width: 50%;
+  }
+  li {
+    flex-basis: 30%;
+  }
+}
+
+svg {
+  height: 64px;
+  width: 64px;
+  fill: #8a2811;
+}
+
+li {
+  display: flex;
+  flex-grow: 1;
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+.feature-descr {
+  flex-grow: 1;
+  padding-left: 1.5em;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* defines footer size and color */
+footer {
+  background-color: #3e1305;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  margin-top: -1rem;
+  margin-bottom: 5rem;
+}
+
+footer a {
+  color: white;
 }

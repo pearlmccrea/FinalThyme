@@ -1,89 +1,90 @@
 /* formats header with image and font color  */
 header {
-    background-image: url(../images/paul-gilmore-145802-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-top: 1rem;
-    padding-bottom: 3rem;
-    color: white;
+  background-image: url(../images/paul-gilmore-145802-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  color: white;
 }
 
 /* selects p class="motto" motto paragraph and formats it */
 .motto {
-    font-style: italic;
-    font-size: 1.5rem;
-    margin-top: 0px;
-    color: white;
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-top: 0px;
+  color: white;
 }
 
 /* selects all h1, h2 elements  */
-h1, h2 {
-    font-weight: 300;
-    font-family:'Raleway', sans-serif;
-    margin: 0px;
+h1,
+h2 {
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  margin: 0px;
 }
 
 h1 {
-    font-size: 5.0rem;
+  font-size: 5rem;
 }
-    h2 {
-        font-size: 2.5rem;
-    }
+h2 {
+  font-size: 2.5rem;
+}
 
 /* selects all div class="container" elements  */
 .container {
-        max-width: 1170px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-right: 1rem;
-        padding-left: 1rem;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 /* font-family is inhered, so setting it on body sets it for the whole page */
 body {
-    font-family:'Nunito Sans', sans-serif;
-    font-size: 16px;
-    background-color: #F0F0F0
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  background-color: #f0f0f0;
 }
 
 /* formats menu section of page */
 #menu {
-    background-color: #F0F0F0;
-    font-weight: bolder;
-    padding-top: 15px;
-    padding-bottom: 20px;
+  background-color: #f0f0f0;
+  font-weight: bolder;
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 
 /* left-aligns menu item descriptions */
 dt {
-    font-weight: bolder;
-    font-size: 1.5rem;
+  font-weight: bolder;
+  font-size: 1.5rem;
 }
 
 dd {
-    margin-left: auto;
-    margin-bottom:1rem;
+  margin-left: auto;
+  margin-bottom: 1rem;
 }
 
 div#menu > div > h2 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    }
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
 /* formats about us section, background color and text formatting */
 main {
-    margin: 0px;
-    line-height: 1.5;
-    padding-top: 10px;
-    padding-bottom: 25px;
-    background-color: #E0E0E0;
-    margin-left: auto;
-    display: block;
+  margin: 0px;
+  line-height: 1.5;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  background-color: #e0e0e0;
+  margin-left: auto;
+  display: block;
 }
 
 main h2 {
-    margin: 0px
+  margin: 0px;
 }
 
 /* moves image of mug and saucer to right hand side */
@@ -93,28 +94,28 @@ main img {
 }
 
 /* defines footer size and color */
-footer{
-    background-color: #3E1305;
-    color: white;
-    padding-top: .5rem;
-    padding-bottom: 1rem;
-    margin-top: -1rem;
+footer {
+  background-color: #3e1305;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  margin-top: -1rem;
 }
 
 /* changes url icon color, size and spacing */
-footer svg{
-    fill: white;
-    width: 1.8rem;
-    padding-right: 1rem;
-    transition: fill .3s;
+footer svg {
+  fill: white;
+  width: 1.8rem;
+  padding-right: 1rem;
+  transition: fill 0.3s;
 }
 
 /* removes underlining from url area */
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 /* creates hover effect on url icons */
-footer svg:hover{
-    fill: #d0d0d0;
+footer svg:hover {
+  fill: #d0d0d0;
 }
