@@ -136,12 +136,14 @@ console.log("10. Description of all movies:");
 
 function formattedName(movie) {
   console.log(
-    movie.title +
-      " was released in " +
+    '"' +
+      movie.title +
+      '" was released in ' +
       movie.released +
       ",rated " +
+      '"' +
       movie.rated +
-      " and runs " +
+      '" and runs ' +
       movie.runningTime +
       " minutes"
   );
