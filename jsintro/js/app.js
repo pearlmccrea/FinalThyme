@@ -84,7 +84,7 @@ console.log('7. "R" rated titles:');
 var findR = 0;
 for (var i = 0; i < MOVIES.length; i++) {
   if (MOVIES[i].rated == "R") {
-    findR = findR + 1;
+    findR++;
   }
 }
 console.log(findR);
@@ -95,7 +95,11 @@ console.log("-------");
 
 // Total time of all movies
 console.log("8. Total time of all movies:");
-
+var totalTime = 0;
+MOVIES.forEach(movie => {
+  totalTime += movie.runningTime;
+});
+console.log(totalTime);
 // Answer: 751
 
 console.log("-------");
@@ -109,6 +113,8 @@ MOVIES.sort((a, b) => {
 MOVIES.forEach(movie => {
   console.log(movie.title);
 });
+
+//movie => is the short hand version of (function(movie))
 
 // Answer:
 // 8½
@@ -125,7 +131,21 @@ console.log("-------");
 // that takes the movie as a parameter and
 // outputs the movie in this format:
 // "The Royal Tenenbaums", released in 2001, rated "R" and runs 92 minutes
+
 console.log("10. Description of all movies:");
+
+function formattedName(movie) {
+  console.log(
+    movie.title +
+      " was released in " +
+      movie.released +
+      ",rated " +
+      movie.rated +
+      " and runs " +
+      movie.runningTime +
+      " minutes"
+  );
+}
 
 MOVIES.forEach(function(movie) {
   formattedName(movie);
