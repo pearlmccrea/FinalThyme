@@ -9,6 +9,7 @@ input.addEventListener("input", function() {
   output.textContent = input.value;
 });
 
+//Listens for the "click" of the button and then performs animation upon clicking.
 button.addEventListener("click", function() {
   welcome.classList.add(animateMe.value);
 });
