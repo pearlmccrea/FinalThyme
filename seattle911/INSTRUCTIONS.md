@@ -4,10 +4,10 @@ Now that you know how to fetch data from a web service, it's time to practice an
 
 The following resources will help you complete this challenge:
 
-* [Querying Services Tutorial](https://imt-549-sp19.github.io/coursework/javascript-ajax.html)
-* [Leaflet.js quick start guide](https://leafletjs.com/examples/quick-start/)
-* [Fetch API overview](https://davidwalsh.name/fetch)
-* [Seattle Real Time Fire 911 Calls API](https://dev.socrata.com/foundry/data.seattle.gov/grwu-wqtk)
+- [Querying Services Tutorial](https://imt-549-sp19.github.io/coursework/javascript-ajax.html)
+- [Leaflet.js quick start guide](https://leafletjs.com/examples/quick-start/)
+- [Fetch API overview](https://davidwalsh.name/fetch)
+- [Seattle Real Time Fire 911 Calls API](https://dev.socrata.com/foundry/data.seattle.gov/grwu-wqtk)
 
 ## Where to Work
 
@@ -16,17 +16,17 @@ For this challenge, you will do you work in the `seattle911` directory. You will
 ## The Data
 
 Before you start coding, open this link in a new browser tab to see what the data looks like:  
-`[https://data.seattle.gov/resource/grwu-wqtk.json?$where=datetime is not null&$order=datetime desc&$limit=500]`
+`[https://data.seattle.gov/resource/grwu-wqtk.json?$where=datetime%20is%20not%20null&$order=datetime%20desc&$limit=500]`
 
 This URL returns the 500 most recent Seattle Fire 911 calls. The returned data is encoded as a JSON array of objects. As discussed in the tutorials, this format can be quickly parsed into JavaScript arrays and objects that you can then manipulate via your code.
 
 Note that each array element is an object with the same set of properties. The ones we will need are:
 
-* `latitude`: the latitude of the incident (may be missing)
-* `longitude`: the longitude of the incident (may be missing)
-* `type`: the type of incident (e.g., Aid Response, Fire Alarm, etc.)
-* `address`: the address used to report the incident
-* `datetime`: when the incident was reported
+- `latitude`: the latitude of the incident (may be missing)
+- `longitude`: the longitude of the incident (may be missing)
+- `type`: the type of incident (e.g., Aid Response, Fire Alarm, etc.)
+- `address`: the address used to report the incident
+- `datetime`: when the incident was reported
 
 ## Requirements
 
