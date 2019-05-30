@@ -1,0 +1,26 @@
+/* defines footer size and color */
+footer {
+  background-color: lightgrey;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 3rem;
+}
+
+/* changes url icon color, size and spacing */
+footer svg {
+  fill: white;
+  width: 2.5rem;
+  padding-right: 1rem;
+  transition: fill 0.3s;
+}
+
+/* removes underlining from url area */
+a {
+  text-decoration: none;
+}
+
+/* creates hover effect on url icons */
+footer svg:hover {
+  fill: teal;
+}
