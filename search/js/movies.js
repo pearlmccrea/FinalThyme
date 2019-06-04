@@ -1,4 +1,13 @@
-const BOOKS = [
+const MOVIES = [
+  {
+    title: "Suicide Squad",
+    genre: "Action,Adventure,Fantasy",
+    director: "David Ayer",
+    year: 2016,
+    length: 123,
+    rating: 6.2,
+    revenue: 325.02
+  },
   {
     title: "A Boat A Whale & A Walrus",
     genre: "Cookbook",
