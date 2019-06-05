@@ -1,7 +1,7 @@
 //calls the list of movies and sorts the data by sales (revenue) descending
 function renderMovies(movie_list) {
   movie_list.sort((a, b) => {
-    return b.revenue - a.revenue;
+    return b.book - a.book;
   });
 
   //selects the <tbody> element
@@ -29,7 +29,7 @@ function renderMovie(movie) {
 
   //creates and appends the <td> elements
   tr.appendChild(renderMovieProp(movie.title, true));
-  tr.appendChild(renderMovieProp(movie.revenue));
+  tr.appendChild(renderMovieProp(movie.book));
   tr.appendChild(renderMovieProp(movie.rating));
 
   //returns the table row to the caller
