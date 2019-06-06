@@ -5,34 +5,54 @@ const MOVIES = [
     book: "Ottolenghi"
   },
   {
-    title: "Vegetables, legumes and grains",
-    rating: 6,
+    title: "Fresh fruit and vegetables",
+    rating: 13,
     book: "Ottolenghi"
   },
   {
-    title: "Vegetables, legumes and grains",
-    rating: 6,
+    title: "Mighty eggplant",
+    rating: 26,
     book: "Ottolenghi"
   },
   {
-    title: "Vegetables, legumes and grains",
-    rating: 6,
+    title: "Greens",
+    rating: 33,
     book: "Ottolenghi"
   },
   {
-    title: "Vegetables, legumes and grains",
-    rating: 6,
+    title: "More vegetables",
+    rating: 46,
     book: "Ottolenghi"
   },
   {
-    title: "Vegetables, legumes and grains",
-    rating: 6,
+    title: "Roots",
+    rating: 60,
     book: "Ottolenghi"
   },
   {
-    title: "Recipe title goes here",
-    rating: 50,
-    book: "book title goes here"
+    title: "Legumes and grains",
+    rating: 72,
+    book: "Ottolenghi"
+  },
+  {
+    title: "Soups",
+    rating: 90,
+    book: "Ottolenghi"
+  },
+  {
+    title: "Meat and fish",
+    rating: 98,
+    book: "Ottolenghi"
+  },
+  {
+    title: "Lamb, beef, and pork",
+    rating: 104,
+    book: "Ottolenghi"
+  },
+  {
+    title: "Legumes and grains",
+    rating: 72,
+    book: "Ottolenghi"
   },
   {
     title: "Recipe title goes here",

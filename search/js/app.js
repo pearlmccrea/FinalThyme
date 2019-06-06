@@ -1,7 +1,7 @@
 //calls the list of movies and sorts the data by sales (revenue) descending
 function renderMovies(movie_list) {
   movie_list.sort((a, b) => {
-    return b.revenue - a.revenue;
+    return b.book - a.book;
   });
 
   //selects the <tbody> element
