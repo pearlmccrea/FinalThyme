@@ -1,4 +1,4 @@
-//calls the list of movies and sorts the data by sales (revenue) descending
+//calls the list of books and sorts the data by book descending
 function renderBooks(book_list) {
   book_list.sort((a, b) => {
     return b.book - a.book;
@@ -14,10 +14,10 @@ function renderBooks(book_list) {
 
   //for each element in the array...
   for (var idx = 0; idx < book_list.length; idx++) {
-    //get the movie record at the current index
+    //get the book record at the current index
     var book = book_list[idx];
 
-    //render that movie record as a <tr> with <td>s
+    //render that book record as a <tr> with <td>s
     //and append it to the <tbody>
     tbody.appendChild(renderBook(book));
   }
@@ -53,7 +53,7 @@ function renderBookProp(content, nonNumeric) {
   return td;
 }
 
-//this defines the variable "input" and identifies the Id of "movie-filter" so that functions can be applied to it
+//this defines the variable "input" and identifies the Id of "book-filter" so that functions can be applied to it
 var input = document.getElementById("book-filter");
 
 //once that var is defined this applies the filter function
