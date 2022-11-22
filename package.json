@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/imt-549-sp19/challenges-pearlmccrea#readme",
   "dependencies": {
-    "browser-sync": "^2.26.3"
+    "browser-sync": "^2.27.10"
   }
 }
